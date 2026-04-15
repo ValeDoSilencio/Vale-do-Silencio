@@ -3,126 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Regras RP</title>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Arial;
-}
-
-body {
-    display: flex;
-    background: #0f172a;
-    color: #e2e8f0;
-}
-
-/* SIDEBAR */
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    background: #020617;
-    padding: 20px;
-    border-right: 1px solid #1e293b;
-}
-
-.sidebar h2 {
-    color: #38bdf8;
-    margin-bottom: 20px;
-}
-
-.sidebar a {
-    display: block;
-    color: #cbd5f5;
-    text-decoration: none;
-    margin: 10px 0;
-    font-size: 14px;
-    transition: 0.2s;
-}
-
-.sidebar a:hover {
-    color: #38bdf8;
-    transform: translateX(5px);
-}
-
-/* CONTENT */
-.content {
-    margin-left: 270px;
-    padding: 30px;
-    width: 100%;
-}
-
-/* SECTION */
-.section {
-    margin-bottom: 40px;
-}
-
-/* ACCORDION */
-.accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.item {
-    background: rgba(2,6,23,0.7);
-    border-radius: 10px;
-    border: 1px solid rgba(56,189,248,0.1);
-    overflow: hidden;
-}
-
-.accordion-header {
-    width: 100%;
-    padding: 15px;
-    background: none;
-    border: none;
-    color: #38bdf8;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.icon {
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid #38bdf8;
-    border-bottom: 2px solid #38bdf8;
-    transform: rotate(45deg);
-    transition: 0.3s;
-}
-
-.item.active .icon {
-    transform: rotate(225deg);
-}
-
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 15px;
-    transition: 0.4s ease;
-    color: #cbd5f5;
-}
-
-.item.active .accordion-content {
-    max-height: 300px;
-    padding: 10px 15px 15px;
-}
-
-/* TITLE */
-h1, h2 {
-    color: #38bdf8;
-    margin-bottom: 15px;
-}
-
-/* SMOOTH */
-html {
-    scroll-behavior: smooth;
-}
-</style>
+<!-- 🔗 CSS LIGADO CORRETAMENTE -->
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -130,54 +15,15 @@ html {
 
 <!-- SIDEBAR -->
 <div class="sidebar">
-<h2>📘 RP Regras</h2>
-<a href="#geral">📜 Regras Gerais</a>
+<h2>📘 Regras RP</h2>
 <a href="#defs">📚 Definições</a>
+<a href="#geral">📜 Regras Gerais</a>
 </div>
 
 <!-- CONTENT -->
 <div class="content">
 
-<h1>📘 Regras do Servidor RP</h1>
-
-<!-- REGRAS GERAIS -->
-<div class="section" id="geral">
-<h2>📜 Regras Gerais</h2>
-
-<div class="accordion">
-
-<div class="item">
-<button class="accordion-header">
-<span>🎭 Roleplay Primeiro</span>
-<span class="icon"></span>
-</button>
-<div class="accordion-content">
-<p>O RP deve ser sempre prioridade acima de tudo.</p>
-</div>
-</div>
-
-<div class="item">
-<button class="accordion-header">
-<span>🎤 Microfone Obrigatório</span>
-<span class="icon"></span>
-</button>
-<div class="accordion-content">
-<p>Comunicação por voz é obrigatória para manter imersão.</p>
-</div>
-</div>
-
-<div class="item">
-<button class="accordion-header">
-<span>🚫 RDM / VDM</span>
-<span class="icon"></span>
-</button>
-<div class="accordion-content">
-<p>Proibido matar ou atropelar sem motivo RP.</p>
-</div>
-</div>
-
-</div>
-</div>
+<h1>📘 Servidor RP</h1>
 
 <!-- DEFINIÇÕES -->
 <div class="section" id="defs">
@@ -191,7 +37,10 @@ html {
 <span class="icon"></span>
 </button>
 <div class="accordion-content">
-<p>Agir com lógica e coerência dentro da situação.</p>
+<p>Agir com lógica e coerência.</p>
+<ul>
+<li>Fugir sem motivo</li>
+</ul>
 </div>
 </div>
 
@@ -201,7 +50,10 @@ html {
 <span class="icon"></span>
 </button>
 <div class="accordion-content">
-<p>Interpretar dor de forma realista.</p>
+<p>Interpretar dor realisticamente.</p>
+<ul>
+<li>Ignorar dano físico</li>
+</ul>
 </div>
 </div>
 
@@ -211,7 +63,39 @@ html {
 <span class="icon"></span>
 </button>
 <div class="accordion-content">
-<p>Valorizar a vida do personagem em situações de perigo.</p>
+<p>Valorizar a vida.</p>
+<ul>
+<li>Ignorar arma apontada</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- REGRAS GERAIS -->
+<div class="section" id="geral">
+<h2>📜 Regras Gerais</h2>
+
+<div class="accordion">
+
+<div class="item">
+<button class="accordion-header">
+<span>RDM / VDM</span>
+<span class="icon"></span>
+</button>
+<div class="accordion-content">
+<p>Proibido matar ou atropelar sem motivo RP.</p>
+</div>
+</div>
+
+<div class="item">
+<button class="accordion-header">
+<span>Metagaming</span>
+<span class="icon"></span>
+</button>
+<div class="accordion-content">
+<p>Proibido usar informação externa no RP.</p>
 </div>
 </div>
 
@@ -220,20 +104,8 @@ html {
 
 </div>
 
-<script>
-const items = document.querySelectorAll(".item");
-
-items.forEach(item => {
-    item.querySelector(".accordion-header").addEventListener("click", () => {
-
-        items.forEach(i => {
-            if (i !== item) i.classList.remove("active");
-        });
-
-        item.classList.toggle("active");
-    });
-});
-</script>
+<!-- 🔗 JS LIGADO CORRETAMENTE -->
+<script src="script.js"></script>
 
 </body>
 </html>
