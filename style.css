@@ -1,58 +1,146 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0f172a; /* fundo geral azul escuro */
-  color: #e2e8f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+    transition: all 0.3s ease;
 }
 
+/* Header */
+header {
+    background-color: #020617;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* Container principal */
 .container {
-  display: flex;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }
 
-/* Sidebar */
-.sidebar {
-  width: 260px;
-  height: 100vh;
-  background: #1e293b; /* azul cinza */
-  color: #e2e8f0;
-  padding: 20px;
-  border-right: 1px solid #334155;
+/* Secções */
+.section {
+    background-color: #020617;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.sidebar h2 {
-  margin-bottom: 20px;
-  color: #93c5fd; /* azul claro */
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: 0.2s;
-}
-
-.sidebar li:hover {
-  background: #334155;
-  color: #93c5fd;
-}
-
-/* Conteúdo */
-.content {
-  padding: 40px;
-  flex: 1;
+.section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* Títulos */
-h1 {
-  color: #93c5fd;
+h1, h2, h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
 }
 
-/* Texto */
-p {
-  color: #cbd5f5;
+h2 {
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Texto destaque */
+.highlight {
+    color: #facc15;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* Botão modo */
+button {
+    background-color: #38bdf8;
+    color: #020617;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Input pesquisa */
+input {
+    background-color: #020617;
+    color: #e2e8f0;
+    outline: none;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        font-size: 20px;
+    }
+}
+
+/* Light mode (usado pelo JS) */
+body.light {
+    background-color: #f1f5f9;
+    color: #020617;
+}
+
+body.light .section {
+    background-color: #ffffff;
+    border: 1px solid #cbd5f5;
+}
+
+body.light header {
+    background-color: #e2e8f0;
+}
+
+body.light input {
+    background-color: #ffffff;
+    color: #020617;
 }
