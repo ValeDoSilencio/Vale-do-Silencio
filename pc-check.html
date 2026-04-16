@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vale do Silêncio RP - PC Check</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #111;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    border-right: 1px solid #222;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    color: cyan;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #1c1c1c;
+    color: cyan;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 260px;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+h2 {
+    border-left: 4px solid cyan;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #161616;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #222;
+}
+
+p, ul {
+    line-height: 1.7;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* CODE BLOCK */
+code, pre {
+    background: #0f0f0f;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    overflow-x: auto;
+    border: 1px solid #222;
+    color: #00ffcc;
+}
+
+/* IMAGE */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #222;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>📜 Vale do Silêncio RP</h2>
+
+    <a href="index.html">⬅ Home</a>
+    <a href="#pccheck">🖥️ PC Check</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>📜 Regras Oficiais</h2>
+
+<h2 id="pccheck">🖥️ PC Check</h2>
+
+<div class="card">
+<p>
+Qualquer jogador no servidor pode ser sujeito a PC Check sempre que solicitado pela staff.
+</p>
+</div>
+
+<div class="card">
+<p>
+Na imagem abaixo encontram-se todos os serviços do Windows que devem estar <b>obrigatoriamente ativos</b>.
+A desativação de qualquer um destes serviços resulta num <b>ban permanente</b>.
+</p>
+</div>
+
+<div class="card">
+<pre>
+get-service | findstr -i "pcasvc"; get-service | findstr -i "DPS"; get-service | findstr -i "Diagtrack"; get-service | findstr -i "eventlog"; get-service | findstr -i "sysmain"
+</pre>
+</div>
+
+<div class="card">
+<h3>🖼️ Referência</h3>
+<img src="https://content.gitbook.com/content/aSh2NgWP4cU5N4smLdPL/blobs/qgLY9Ov6cszRmdUKxHkq/image.png" alt="Processos Stoppados">
+<p style="font-size: 12px; color: #aaa;">Processos Stoppados</p>
+</div>
+
+</div>
+
+</body>
+</html>
