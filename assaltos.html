@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vale do Silêncio RP - Assaltos</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #111;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    border-right: 1px solid #222;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    color: cyan;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #1c1c1c;
+    color: cyan;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 260px;
+    padding: 30px;
+    max-width: 1100px;
+}
+
+h2 {
+    border-left: 4px solid cyan;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #161616;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #222;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #111;
+}
+
+th, td {
+    border: 1px solid #222;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    color: cyan;
+}
+
+ul {
+    line-height: 1.7;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>📜 Vale do Silêncio RP</h2>
+
+    <a href="#assaltos">🏦 Assaltos</a>
+    <a href="index.html">⬅ Voltar Atrás</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>📜 Regras Oficiais</h2>
+
+<h2 id="assaltos">🏦 Assaltos</h2>
+
+<div class="card">
+<ul>
+    <li>É proibido fake refém (usar amigos/membros de organização como reféns falsos).</li>
+</ul>
+</div>
+
+<div class="card">
+<p>
+✔ É necessário esperar pela polícia  
+❌ Não é necessário esperar pela polícia (depende do tipo de assalto)
+</p>
+</div>
+
+<div class="card">
+<table>
+<tr>
+    <th>Assalto</th>
+    <th>Mínimo Assaltantes</th>
+    <th>Máximo Assaltantes</th>
+    <th>Máximo Reféns</th>
+    <th>Polícia</th>
+</tr>
+
+<tr>
+    <td>Casas</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>❌</td>
+</tr>
+
+<tr>
+    <td>ATM</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>❌</td>
+</tr>
+
+<tr>
+    <td>Lojas</td>
+    <td>2</td>
+    <td>5</td>
+    <td>2</td>
+    <td>✔</td>
+</tr>
+
+<tr>
+    <td>Ammunation</td>
+    <td>2</td>
+    <td>5</td>
+    <td>2</td>
+    <td>✔</td>
+</tr>
+
+<tr>
+    <td>Banco Fleeca</td>
+    <td>4</td>
+    <td>7</td>
+    <td>4</td>
+    <td>✔</td>
+</tr>
+
+<tr>
+    <td>Joalharia</td>
+    <td>6</td>
+    <td>10</td>
+    <td>7</td>
+    <td>✔</td>
+</tr>
+
+</table>
+</div>
+
+</div>
+
+</body>
+</html>
