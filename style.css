@@ -48,12 +48,17 @@ body {
 
     padding: 20px;
 
-   .sidebar-logo {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 40px;
-    height: auto;
+   .sidebar {
+    width: 260px;
+    background: #111;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    border-right: 1px solid #222;
+    overflow-y: auto;
+
+    position: relative; /* 👈 IMPORTANTE */
+}
 }
 
 .sidebar h2 {
