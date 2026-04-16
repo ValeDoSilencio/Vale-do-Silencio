@@ -57,7 +57,7 @@ body {
 }
 
     position: relative; /* 👈 IMPORTANTE */
-   .bottom-left-image {
+   .top-left-image {
     position: fixed;
     bottom: 50px;
     left: 10px;
