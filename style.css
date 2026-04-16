@@ -51,8 +51,11 @@ body {
     border-right: 1px solid #222;
     overflow-y: auto;
 
+    position: relative; /* 👈 MUITO IMPORTANTE */
+}
+
     position: relative; /* 👈 IMPORTANTE */
-      .bottom-left-image {
+   .bottom-left-image {
     position: fixed;
     bottom: 50px;
     left: 10px;
