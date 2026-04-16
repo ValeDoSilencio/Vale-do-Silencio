@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vale do Silêncio RP - Organizações</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #111;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    border-right: 1px solid #222;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    color: cyan;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #1c1c1c;
+    color: cyan;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 260px;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+h2 {
+    border-left: 4px solid cyan;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #161616;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #222;
+}
+
+p, ul {
+    line-height: 1.7;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.acc summary {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+}
+
+.acc summary:hover {
+    color: cyan;
+}
+
+.acc summary::-webkit-details-marker {
+    display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>📜 Vale do Silêncio RP</h2>
+
+    <a href="#organizacoes">🏴 Organizações</a>
+    <a href="#moradores">🏠 Moradores</a>
+  <a href="index.html">⬅ Voltar Atrás</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>📜 Regras Oficiais</h2>
+
+<h2 id="organizacoes">☠️ Organizações</h2>
+
+<div class="card">
+<details class="acc">
+<summary>📜 Regras Gerais</summary>
+<ul>
+    <li>Máximo de 15 membros oficiais por organização.</li>
+    <li>Os membros devem vestir-se de forma coerente com a organização.</li>
+    <li>Todos os membros devem manter comportamento coerente em RP.</li>
+    <li>Chefes são responsáveis pelas ações dos membros não identificados.</li>
+    <li>É proibido roubar a própria organização.</li>
+    <li>Grupos com 3+ membros devem estar identificados.</li>
+</ul>
+</details>
+</div>
+
+<h2 id="moradores">🏠 Moradores</h2>
+
+<div class="card">
+<details class="acc">
+<summary>📜 Regras de Moradores</summary>
+<ul>
+    <li>Não existe limite de moradores.</li>
+    <li>Moradores podem defender o seu bairro/favela em RP.</li>
+    <li>Moradores são apoio da organização e podem participar em RP com a mesma.</li>
+</ul>
+</details>
+</div>
+
+</div>
+
+</body>
+</html>
