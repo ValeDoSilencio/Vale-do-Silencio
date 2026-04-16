@@ -16,7 +16,7 @@ html {
     position: fixed;
     bottom: 10px;
     left: 10px;
-    width: 40px;   /* 👈 tamanho pequeno correto */
+    width: 10px;   /* 👈 tamanho pequeno correto */
     height: auto;
     z-index: 9999;
 }
