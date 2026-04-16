@@ -11,58 +11,56 @@ body {
     font-family: Arial, sans-serif;
     background: #0b0b0b;
     color: white;
-}
-
-/* HERO */
-.hero {
-    height: 40vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
 }
 
-.hero h1 {
-    font-size: 40px;
-    margin: 0;
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #111;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    border-right: 1px solid #222;
+}
+
+.sidebar h2 {
+    color: cyan;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #1c1c1c;
     color: cyan;
 }
 
-.hero p {
-    color: #ccc;
-}
-
-/* BUTTON */
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
-    border-radius: 8px;
-    background: #1f1f1f;
-    color: white;
-    text-decoration: none;
-    border: 1px solid #333;
-}
-
-.btn:hover {
-    background: cyan;
-    color: black;
-}
-
-/* SECTION */
-.section {
-    padding: 40px;
+/* CONTENT */
+.content {
+    margin-left: 260px;
+    padding: 30px;
     max-width: 900px;
-    margin: auto;
+}
+
+h2 {
+    border-left: 4px solid cyan;
+    padding-left: 10px;
+    margin-top: 30px;
 }
 
 .card {
     background: #161616;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
     border: 1px solid #222;
 }
 
@@ -89,12 +87,21 @@ body {
     display: none;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #666;
-    border-top: 1px solid #222;
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
 }
 </style>
 
@@ -102,36 +109,33 @@ footer {
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-    <h1>👥 Civis</h1>
-    <p>Regras oficiais dos civis organizados</p>
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>📜 Vale do Silêncio RP</h2>
 
-    <!-- HOME BUTTON -->
-    <a class="btn" href="index.html">⬅ Voltar atrás</a>
+    <a href="index.html">⬅ Home</a>
+    <a href="#civis">👥 Civis</a>
 </div>
 
 <!-- CONTENT -->
-<div class="section">
+<div class="content">
 
-<h2>📜 Regras de Civis</h2>
+<h2>📜 Regras Oficiais</h2>
+
+<h2 id="civis">👥 Civis</h2>
 
 <div class="card">
 <details class="acc">
-<summary>👥 Civis Organizados</summary>
-<ul>
-    <li>Civis organizados podem ter no máximo 8 membros.</li>
-    <li>É proibido civis organizados apresentarem-se ou agirem como organização.</li>
-    <li>É proibido civis organizados utilizarem mochilas como meio de identificação.</li>
-</ul>
+    <summary>👥 Civis Organizados</summary>
+    <ul>
+        <li>Civis organizados podem ter no máximo 8 membros.</li>
+        <li>É proibido civis organizados apresentarem-se ou agirem como organização.</li>
+        <li>É proibido civis organizados utilizarem mochilas como meio de identificação.</li>
+    </ul>
 </details>
 </div>
 
 </div>
-
-<footer>
-© Vale do Silêncio RP - Todos os direitos reservados
-</footer>
 
 </body>
 </html>
