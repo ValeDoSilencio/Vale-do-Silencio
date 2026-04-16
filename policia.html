@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vale do Silêncio RP - Polícia</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #111;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    border-right: 1px solid #222;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    color: cyan;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #1c1c1c;
+    color: cyan;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 260px;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+h2 {
+    border-left: 4px solid cyan;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #161616;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #222;
+}
+
+p, ul {
+    line-height: 1.7;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.acc summary {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+}
+
+.acc summary:hover {
+    color: cyan;
+}
+
+.acc summary::-webkit-details-marker {
+    display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>📜 Vale do Silêncio RP</h2>
+
+    <a href="#policia">🚓 Polícia</a>
+  <a href="index.html">⬅ Voltar Atrás</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>📜 Regras Oficiais</h2>
+
+<h2 id="policia">🚓 Polícia</h2>
+
+<div class="card">
+<p>
+Deve-se considerar que as autoridades visam sempre a rendição e captura e não a eliminação de um suspeito.
+</p>
+</div>
+
+<div class="card">
+<details class="acc">
+<summary>📜 Regras Base</summary>
+<ul>
+    <li>É proibido abrir fogo contra a polícia após abordagem de trânsito normal.</li>
+    <li>É proibido fugir da polícia sem motivo plausível em roleplay.</li>
+    <li>Jogadores mortos pela polícia podem ser levados ao hospital e revividos em RP (quando aplicável).</li>
+    <li>É proibido usar reféns como moeda de troca para libertações ou vantagens ilegais.</li>
+</ul>
+</details>
+</div>
+
+<div class="card">
+<details class="acc">
+<summary>🚓 Exclusivo Polícia</summary>
+<ul>
+    <li>Manobras PIT permitidas apenas abaixo de 100 km/h.</li>
+    <li>É proibido uso excessivo de taser ou balas de borracha.</li>
+    <li>Taser e rubber bullets devem ser usados de forma proporcional e justificada em RP.</li>
+</ul>
+</details>
+</div>
+
+</div>
+
+</body>
+</html>
