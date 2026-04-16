@@ -12,13 +12,7 @@
 ========================= */
 html {
     scroll-behavior: smooth;
-    .bottom-left-image {
-    position: fixed;
-    bottom: 50px;
-    left: 10px;
-    width: 5px;   /* 👈 tamanho pequeno correto */
-    height: auto;
-    z-index: 9999;
+   
 }
 }
 }
@@ -58,6 +52,13 @@ body {
     overflow-y: auto;
 
     position: relative; /* 👈 IMPORTANTE */
+      .bottom-left-image {
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    width: 5px;   /* 👈 tamanho pequeno correto */
+    height: auto;
+    z-index: 9999;
 }
 }
 
