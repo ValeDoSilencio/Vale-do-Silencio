@@ -12,13 +12,14 @@
 ========================= */
 html {
     scroll-behavior: smooth;
-    bottom-left-image {
+    .bottom-left-image {
     position: fixed;
-    bottom: 2px;
-    left: 2px;
-    width: 5px;
+    bottom: 10px;
+    left: 10px;
+    width: 40px;   /* 👈 tamanho pequeno correto */
     height: auto;
     z-index: 9999;
+}
 }
 }
 
