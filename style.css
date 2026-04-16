@@ -14,7 +14,7 @@ html {
     scroll-behavior: smooth;
     .bottom-left-image {
     position: fixed;
-    bottom: 10px;
+    bottom: 50px;
     left: 10px;
     width: 5px;   /* 👈 tamanho pequeno correto */
     height: auto;
