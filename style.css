@@ -49,7 +49,9 @@ body {
     padding: 20px;
     position: fixed;
     border-right: 1px solid #222;
-    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
 
     position: relative; /* 👈 MUITO IMPORTANTE */
 }
